@@ -1,5 +1,5 @@
 function setup() {
-    createCanvas(800,600);
+    createCanvas(1425,600);
     var gray = '#9DA9A0';
     background(gray);
 
