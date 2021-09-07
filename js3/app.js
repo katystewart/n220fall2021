@@ -5,7 +5,7 @@ function setup() {
 }
 
 function draw() {
-    background (32);
+    background ("black");
     circle (circleX,300,50);
     circleX = circleX + 5;
     if (circleX > 800) {
