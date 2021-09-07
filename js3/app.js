@@ -10,5 +10,6 @@ function draw() {
     circleX = circleX + 5;
     if (circleX > 800) {
     circleX = 0;
+    console.log(circleX);
     }
 }
