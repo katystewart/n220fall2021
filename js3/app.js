@@ -8,8 +8,8 @@ function setup() {
 
 function draw() {
     //clears background//
-    background ("black");
-
+    background ("black"); 
+    
     //circle starts at x = 0, y = 300//
     circle (circleX,300,50);
 
