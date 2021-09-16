@@ -1,9 +1,10 @@
+//setup canvas//
 function setup() {
     createCanvas(500,500);
     
 
 }
-
+//loops circles with the biggest circle in the back//
 function draw() {
 
 background(200);

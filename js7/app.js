@@ -4,14 +4,17 @@ function setup() {
 
 function draw() {
 
-
+//max number of squares on bottom//
 let width = 5;
 
 background("white");
 
-for(let k = 0; k < width; k++) {
-  for(let i = 0; i < k; i++) {
-    rect( (i+0.5)*25, (k+0.5)*25,25,25);
+//adds 1 rectangle every row until width is reached//
+//25 is size of box//
+//1 is added to row every time//
+for(let row = 0; row < width; row++) {
+  for(let col = 0; col < row; col++) {
+    rect( (col+0.5)*25, (row+0.5)*25,25,25);
     fill("red");
     stroke("white");
   }
