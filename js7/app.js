@@ -12,6 +12,8 @@ background("white");
 //adds 1 rectangle every row until width is reached//
 //25 is size of box//
 //1 is added to row every time//
+//row is row//
+//col is column//
 for(let row = 0; row < width; row++) {
   for(let col = 0; col < row; col++) {
     rect( (col+0.5)*25, (row+0.5)*25,25,25);
