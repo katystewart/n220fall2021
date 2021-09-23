@@ -1,17 +1,26 @@
-let positions = [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ];
+let rectX = 0;
+let rectY= 0;
+var hasClicked = false;
 
-function setup() {
-    createCanvas(400,300);
 
-}
-
-function draw() {
-    background("orange");
-
-    positions.push( mouseX );
-    positions.shift();
-
-    for( var i = 0; i < positions.length; i ++) {
-        circle( positions[i], 150, 20);
+function setup() { 
+    createCanvas(400, 400);
+    background(50);
+    rectMode(CENTER);
+    noStroke();
+  } 
+  
+  function draw() { 
+  background(50);
+    if (hasClicked) {
+      fill(255);
+      rect(rectX, rectY, 50, 25);
     }
-}
+    rectY+=5;
+  }
+  
+  function mousePressed() {
+    rectX = mouseX;
+    rectY = mouseY;
+    hasClicked = true;
+  }
