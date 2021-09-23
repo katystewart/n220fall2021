@@ -18,9 +18,8 @@ function draw() {
   positions.push(position);
   positions.shift();
 
-  
+  //loop to draw circles according to both arrays; 10 apart and following mouse//
   for (var i = 0; i < positions.length; i++) {
-
     noStroke();
     fill(100);
     circle(positions[i].x,positions[i].y,20,20);
