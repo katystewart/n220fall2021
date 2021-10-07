@@ -13,6 +13,7 @@ function draw() {
   background(255);
     //display the dot//
     myDot.display();
+    //move the dot//
     myDot.move();
 }
 
@@ -25,7 +26,7 @@ class Dot {
         this.height = 50;
         this.c = color(252, 3, 132);
     }
-    
+    //function to move dot//
     move() {
         this.xpos = this.xpos + random(-5, 5);
         this.ypos = this.ypos + random(-5,5);
