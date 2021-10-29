@@ -14,7 +14,7 @@ document.getElementById("dvanswer").innerHTML="Success";
   }
 else
   {
-//retrieving dvanswer and outputting answer if right//
+//retrieving dvanswer and outputting answer if wrong//
 document.getElementById("dvanswer").innerHTML="Wrong information";
   }
 }
