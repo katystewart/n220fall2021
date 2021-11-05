@@ -4,22 +4,12 @@
 //Use a separate function from the onclick function to discern if it is divisible. 
 //This function should return either true if it is divisible  or false if it is not.
 
-
-
-/*function myFunction() {
-    let number = divide();
-    dvanswer.innerHTML = number;
-    
-}
-*/
-
+/*
 //function that takes a numerical arguement//
-//returns true or false if that number is divisible by 7//
-
-
  function divide() {
     let x = document.getElementById("divisibleBy").value;
 
+//returns true or false if that number is divisible by 7//
     if (x % 7==0) {
     document.getElementById("dvanswer").innerHTML="True"
     } 
@@ -28,4 +18,26 @@
     document.getElementById("dvanswer").innerHTML="False"
     }
     console.log(x);
+} 
+
+*/
+let x = document.getElementById("divisibleBy").value;
+
+//displays whether true or false using divide function//
+function display() {
+    document.getElementById("dvanswer").innerHTML = divide();
+    console.log(x);
+}
+
+//returns true or false if inputted value is divisible by 7//
+function divide() {
+    let x = document.getElementById("divisibleBy").value;
+
+    if (x % 7==0) {
+        return true
+    } 
+    
+    else {
+        return false
+    }
 } 
