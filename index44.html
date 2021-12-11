@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Game</title>
+
+    <style>
+        .row{
+            text-align: left;
+        }
+
+        .box{
+            display: inline-block;
+            width: 150px;
+            height: 150px;
+            background-color: #bdc5c9;
+            cursor: pointer
+
+        }
+
+        .box.match {
+            cursor: default;
+        }
+
+        .blue{
+            background-color: blue;
+        }
+
+        .red{
+            background-color: red;
+        }
+        .pink{
+            background-color: pink;
+        }
+        .purple{
+            background-color: purple;
+        }
+        .yellow{
+            background-color: yellow;
+        }
+        .black{
+            background-color: black;
+        }
+        .green{
+            background-color: green;
+        }
+        .orange{
+            background-color: orange;
+        }
+
+       .data-hidden{
+           background-color: #bdc5c9;
+       }
+    </style>
+</head>
+<body>
+    <div class="row">
+        <div data-color="orange" class="box orange data-hidden" onClick="onClick(event)"></div>
+        <div data-color="purple" class="box purple data-hidden" onClick="onClick(event)"></div>
+        <div data-color="green" class="box green data-hidden" onClick="onClick(event)"></div>
+        <div data-color="red" class="box red data-hidden" onClick="onClick(event)"></div>
+    </div>
+    <div class="row">
+        <div data-color="red" class="box red data-hidden" onClick="onClick(event)"></div>
+        <div data-color="orange" class="box orange data-hidden" onClick="onClick(event)"></div>
+        <div data-color="purple" class="box purple data-hidden" onClick="onClick(event)"></div>
+        <div data-color="blue" class="box blue data-hidden" onClick="onClick(event)"></div>
+    </div>
+    <div class="row">
+        <div data-color="black" class="box black data-hidden" onClick="onClick(event)"></div>
+        <div data-color="black" class="box black data-hidden" onClick="onClick(event)"></div>
+        <div data-color="pink" class="box pink data-hidden" onClick="onClick(event)"></div>
+        <div data-color="yellow" class="box yellow data-hidden" onClick="onClick(event)"></div>
+    </div>
+    <div class="row">
+        <div data-color="yellow" class="box yellow data-hidden" onClick="onClick(event)"></div>
+        <div data-color="green" class="box green data-hidden" onClick="onClick(event)"></div>
+        <div data-color="pink" class="box pink data-hidden" onClick="onClick(event)"></div>
+        <div data-color="blue" class="box blue data-hidden" onClick="onClick(event)"></div>
+    </div>
+    <button onClick="resetGame()"> Play Again!</button>
+
+    <script src="js44/app.js"></script>
+</body>
+</html>

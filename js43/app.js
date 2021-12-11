@@ -1,3 +1,4 @@
+//calls for button and div in HTML, when the button is clicked the answer(target) will appear//
 document.getElementById("oneBtn").addEventListener("click", function() {
     document.getElementById("ansOne").innerHTML = "Indianapolis";
 });

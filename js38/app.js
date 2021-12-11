@@ -6,12 +6,13 @@ let userChoice
 let computerChoice
 let result
 
-possibleChoices.forEach(possibleChoice => possibleChoice.addEventListener('click', (element) => {
+function possibleChoices() {
+possibleChoice.addEventListener('click', (element));
   userChoice = element.target.id
   userChoiceDisplay.innerHTML = userChoice
   generateComputerChoice()
   getResult()
-}))
+}
 
 function generateComputerChoice() {
   let randomNumber = Math.floor(Math.random() * 3) + 1 // or you can use possibleChoices.length

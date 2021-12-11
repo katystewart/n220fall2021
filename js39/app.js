@@ -2,13 +2,13 @@ let computerChoiceDisplay = document.getElementById("computer-choice");
 let userChoiceDisplay = document.getElementyById("user-choice");
 let resultDisplay = document.getElementById("result");
 
-let possibleChoices = document.getElementById("button")
-possibleChoices.forEach(possibleChoices => possibleChoices.addEventListener("click", (element) => {
-    userChoice = element.target.id
-    userChoiceDisplay.innerHTML = userChoice
-    makeComputerChoice()
-    getResult()
-}))
+function possibleChoices() {
+    possibleChoice.addEventListener('click', (element));
+      userChoice = element.target.id
+      userChoiceDisplay.innerHTML = userChoice
+      generateComputerChoice()
+      getResult()
+    }
 
 function makeComputerChoice() {
     let randomNumber = Math.floor(Math.random() * 3) +1
