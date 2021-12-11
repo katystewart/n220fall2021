@@ -1,8 +1,8 @@
 let clickedBox = null;
 
-function onClick(e) {
+function onClick(event) {
     //set the target
-    let target = e.currentTarget;
+    let target = event.currentTarget;
 
     //does not allow for first target box or its match to be clicked
     if (target == clickedBox && target.className.includes('match')) {
