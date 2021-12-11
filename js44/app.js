@@ -2,7 +2,7 @@ let clickedBox = null;
 
 function onClick(event) {
     //set the target
-    let target = event.currentTarget;
+    let target = event.target;
 
     //reveals hidden card color on click
     target.className = target.className.replace('data-hidden', '');
