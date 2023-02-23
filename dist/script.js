@@ -12,15 +12,15 @@
       yyyy = today.getFullYear(),
       nextYear = yyyy + 1,
       dayMonth = "03/04/",
-      birthday = dayMonth + yyyy;
+      bestday = dayMonth + yyyy;
   
   today = mm + "/" + dd + "/" + yyyy;
-  if (today > birthday) {
-    birthday = dayMonth + nextYear;
+  if (today > bestday) {
+    bestday = dayMonth + nextYear;
   }
   //end
   
-  const countDown = new Date(birthday).getTime(),
+  const countDown = new Date(bestday).getTime(),
       x = setInterval(function() {    
 
         const now = new Date().getTime(),
@@ -33,7 +33,7 @@
 
         //do something later when date is reached
         if (distance < 0) {
-          document.getElementById("headline").innerText = "It's my birthday!";
+          document.getElementById("headline").innerText = "I can't wait to see you! - Katy";
           document.getElementById("countdown").style.display = "none";
           document.getElementById("content").style.display = "block";
           clearInterval(x);
