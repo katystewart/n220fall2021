@@ -1,43 +1,27 @@
+var countDownDate = new Date("Jan 5, 2024 15:37:25").getTime();
 
-var myDot;
+// Update the count down every 1 second
+var x = setInterval(function() {
 
-function setup() {
-    createCanvas(800,400);
-    
-    //create the dot//
-    myDot = new Dot();
-    console.log(myDot);
-}
+  // Get today's date and time
+  var now = new Date().getTime();
 
-function draw() {
-  background(255);
-    //display the dot//
-    myDot.display();
-    //move the dot//
-    myDot.move();
-}
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
 
-//dot constructor//
-class Dot {
-    constructor() {
-        this.xpos = 0;
-        this.ypos = 0;
-        this.width = 50;
-        this.height = 50;
-        this.c = color(252, 3, 132);
-    }
-    //function to move dot//
-    move() {
-        this.xpos = this.xpos + random(-5, 5);
-        this.ypos = this.ypos + random(-5,5);
-    }
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-    //display method//
-    display() {
-    
-        noStroke();
-        fill(this.c);
-        ellipse(this.xpos + mouseX, this.ypos + mouseY, this.width, this.height);
-    }
+  // Display the result in the element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
 
-}
+  // If the count down is finished, write some text
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
