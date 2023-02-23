@@ -6,7 +6,7 @@
         
         p {
           text-align: center;
-          font-size: 90%;
+          font-size: 150;
           padding-top: 100px;
           margin-top: 0px;
           color: rgb(255, 255, 255);
@@ -23,6 +23,14 @@
           font-family: Arial, Helvetica, sans-serif;
 
         }
+        h2 {
+          text-align: center;
+          font-size: 60px;
+          margin-top: 0px;
+          color: rgb(255, 255, 255);
+          font-family: Arial, Helvetica, sans-serif;
+
+        }
         </style>
         </head>
         <head>
@@ -30,12 +38,12 @@
           </head>
         
           <body> 
-            <h1>Days until I get to see Katy...</h1> 
+            <h1>Days until Abe sees Katy...</h1> 
           </body>
         <body>
         
         <p id="demo"></p>
-       
+         
         <script>
         // Set the date we're counting down to
         var countDownDate = new Date("Mar 3, 2023 15:37:25").getTime();
@@ -56,8 +64,8 @@
           var seconds = Math.floor((distance % (1000 * 60)) / 1000);
             
           // Output the result in an element with id="demo"
-          document.getElementById("demo").innerHTML = days + ": " + hours + ": "
-          + minutes + ": " + seconds + " ";
+          document.getElementById("demo").innerHTML = days + " : " + hours + " : "
+          + minutes + " : " + seconds + " ";
             
           // If the count down is over, write some text 
           if (distance < 0) {
@@ -66,6 +74,6 @@
           }
         }, 1000);
         </script>
-        
+        <h2>I love you :) - Katy</h2> 
         </body>
         </html>
