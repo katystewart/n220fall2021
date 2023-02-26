@@ -4,7 +4,7 @@
         hour = minute * 60,
         day = hour * 24;
 
- 
+
   let today = new Date(),
       dd = String(today.getDate()).padStart(2, "0"),
       mm = String(today.getMonth() + 1).padStart(2, "0"),
@@ -13,6 +13,7 @@
       dayMonth = "03/13/",
       bestday = dayMonth + yyyy;
   
+      
   today = mm + "/" + dd + "/" + yyyy;
   if (today > bestday) {
     bestday = dayMonth + nextYear;
