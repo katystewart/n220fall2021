@@ -10,7 +10,7 @@
       mm = String(today.getMonth() + 1).padStart(2, "0"),
       yyyy = today.getFullYear(),
       nextYear = yyyy + 1,
-      dayMonth = "03/13/",
+      dayMonth = "03/14/",
       bestday = dayMonth + yyyy;
   
       
