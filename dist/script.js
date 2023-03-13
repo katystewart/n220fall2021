@@ -5,22 +5,9 @@
         day = hour * 24;
 
 
-  let today = new Date(),
-      dd = String(today.getDate()).padStart(2, "0"),
-      mm = String(today.getMonth() + 1).padStart(2, "0"),
-      yyyy = today.getFullYear(),
-      nextYear = yyyy + 1,
-      dayMonth = "03/14/";
-      bestday = dayMonth + yyyy;
+
   
-      
-  today = mm + "/" + dd + "/" + yyyy;
-  if (today > bestday) {
-    bestday = dayMonth + nextYear;
-  }
-  //end
-  
-  const countDown = new Date(bestday).getTime(),
+  const countDown = new Date("Mar 14, 2023 09:45:00").getTime(),
       x = setInterval(function() {    
 
         const now = new Date().getTime(),
